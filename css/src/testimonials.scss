@@ -1,0 +1,147 @@
+.testimonials_wrap {
+	max-width: 1120px;
+	height: 425px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 278px;
+	background: linear-gradient(to right, #67c3f3, #5a98f2);
+	border-radius: 24px;
+	padding-top: 64px;
+	padding-bottom: 89px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		right: -47px;
+		top: -15px;
+		width: 132px;
+		height: 115px;
+		background-image: url('../../img/testimonials_dots.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 132px;
+		height: 115px;
+		background-image: url('../../img/service_dots.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 39px;
+		left: -52px;
+		z-index: -1;
+	}
+	.section_title {
+		color: #fff;
+		line-height: 48px;
+		&:after {
+			background-color: #fff;
+		}
+	}
+	.slider_navs {
+		position: absolute;
+		bottom: -45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		.slick-dots {
+			display: flex;
+			align-items: center;
+			gap: 18px;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			button {
+				display: none;
+			}
+			li {
+				width: 10px;
+				height: 10px;
+				background-color: #5b9bf3;
+				opacity: 0.3;
+				border-radius: 50%;
+				&.slick-active {
+					opacity: 1;
+				}
+			}
+		}
+
+		.slick-arrow {
+			width: 31.5px;
+			height: 20px;
+			padding: 0;
+			background-color: transparent;
+			border: 0;
+			position: absolute;
+			&.slick-disabled {
+				opacity: 0.4;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 31.5px;
+				height: 20px;
+				background-image: url('../../img/slide_arrow.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&.slick-prev {
+				transform: translateX(-200px);
+				&:after {
+					transform: rotate(-180deg);
+				}
+				left: 50%;
+			}
+			&.slick-next {
+				right: 50%;
+				transform: translateX(200px);
+			}
+		}
+	}
+}
+.testimonials_slider {
+	padding-left: 118px;
+	padding-right: 118px;
+	.slide {
+		.slide_inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.person_info {
+			display: flex;
+			align-items: center;
+			.avatar {
+				margin-right: 29px;
+				img {
+					border-radius: 50%;
+				}
+			}
+
+			.info {
+				color: #fff;
+				.name {
+					font-family: 'Poppins', sans-serif;
+					font-weight: 700;
+					font-size: 22px;
+					line-height: 1;
+				}
+				.position {
+					font-size: 18px;
+					line-height: 48px;
+				}
+			}
+		}
+		.text {
+			max-width: 420px;
+			width: 100%;
+			color: #fff;
+			font-weight: 400;
+			font-size: 19px;
+		}
+	}
+}

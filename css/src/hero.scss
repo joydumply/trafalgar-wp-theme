@@ -1,0 +1,44 @@
+.hero {
+	position: relative;
+    margin-bottom: 190px;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 83px;
+		height: 115px;
+		background-image: url('../../img/dots.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		left: 0;
+		top: 0;
+	}
+	.hero_container {
+	}
+}
+
+.hero_content {
+	max-width: 461px;
+	width: 100%;
+	.title {
+		font-family: 'Popins', sans-serif;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 56px;
+		margin-bottom: 25px;
+		color: #000000;
+	}
+	.description {
+		color: #7d7987;
+		font-size: 21px;
+		line-height: 32px;
+		margin-bottom: 45px;
+	}
+
+	.consult_btn {
+	}
+}
+.hero_image {
+	margin-right: -29px;
+	img {
+	}
+}

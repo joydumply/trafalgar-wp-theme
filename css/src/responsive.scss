@@ -1,0 +1,202 @@
+@media screen and (max-width: 1460px) {
+	.hero_image {
+		margin-right: 0;
+	}
+	.description_section_item {
+		&:nth-child(odd) {
+			margin-left: 0;
+		}
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+	}
+
+	.container,
+	.description_section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.hero_container {
+		flex-direction: column-reverse;
+	}
+	.hero_content .title {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	.hero {
+		margin-bottom: 100px;
+	}
+	.hero_content {
+		max-width: 600px;
+		text-align: center;
+		.description {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+	.hero_image {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		img {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			max-height: 350px;
+		}
+	}
+	.consult_btn {
+		margin: 0 auto;
+	}
+
+	.service_items .item {
+		width: 320px;
+		padding: 0 15px;
+		align-items: center;
+		.item_description {
+			text-align: center;
+		}
+	}
+
+	.services {
+		margin-bottom: 100px;
+	}
+
+	.description_section_item .img {
+		margin-bottom: 40px;
+		img {
+			max-width: 555px;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.latest_posts_wrap .post {
+		max-width: 300px;
+	}
+	.service_items {
+		justify-content: center;
+	}
+
+	.description_section_item {
+		flex-direction: column;
+		margin-bottom: 100px;
+		&:nth-child(even) {
+			flex-direction: column;
+		}
+		.description_section_info {
+			max-width: 600px;
+			text-align: center;
+			.btn {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+
+	.description_section {
+		margin-bottom: 100px;
+	}
+
+	.testimonials_wrap {
+		margin-bottom: 200px;
+	}
+
+	.latest_posts_wrap {
+		flex-direction: column;
+		align-items: center;
+		.post {
+			margin-bottom: 40px;
+		}
+	}
+
+	.footer_wrap {
+		flex-wrap: wrap;
+		.footer_info {
+			width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	.testimonials_slider {
+		.slide {
+			.person_info {
+				flex-direction: column;
+				.avatar {
+					margin-right: 0;
+					margin-bottom: 20px;
+				}
+				.info {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.main-navigation {
+		position: fixed;
+		width: 100%;
+		left: 100%;
+		top: 0;
+		bottom: 0;
+		background: #fff;
+		transition: all linear 0.4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.menu {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+		}
+		&.open {
+			left: 0;
+			z-index: 100;
+		}
+	}
+	.testimonials_wrap {
+		height: auto;
+	}
+	.slide_inner {
+		flex-direction: column;
+	}
+	.testimonials_slider .slide .person_info .info {
+		margin-bottom: 20px;
+	}
+	.testimonials_slider .slide .text {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.service_items {
+		flex-direction: column;
+		align-items: center;
+	}
+	.testimonials_slider {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.testimonials_wrap {
+		.slider_navs {
+			.slick-arrow {
+				&.slick-prev {
+					transform: translateX(-100px);
+				}
+				&.slick-next {
+					transform: translateX(100px);
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 520px) {
+	.footer_menu_section {
+		display: none;
+	}
+}
